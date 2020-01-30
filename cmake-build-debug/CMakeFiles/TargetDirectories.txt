@@ -1,0 +1,3 @@
+/home/tudor/projects/goo2d/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/tudor/projects/goo2d/cmake-build-debug/CMakeFiles/goo2d.dir
+/home/tudor/projects/goo2d/cmake-build-debug/CMakeFiles/edit_cache.dir
