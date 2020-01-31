@@ -1,10 +1,13 @@
 #pragma once
 
 #include <SDL2/SDL.h>
+#include <SDL2/SDL_ttf.h>
+#include <SDL2/SDL_image.h>
 #include <glm.hpp>
 #include "ecs/Level.h"
 #include "utils/Log.h"
 #include "utils/Time.h"
+#include "AssetManager.h"
 #include "string"
 #include "map"
 #include "vector"
@@ -17,7 +20,6 @@ namespace goo {
     static glm::vec2 size;
     static std::string title;
     static SDL_Event event;
-    static SDL_Renderer *renderer;
     static bool isRunning;
     static std::vector<goo::Level *> levels;
     static Level *currentLevel;
@@ -29,6 +31,8 @@ namespace goo {
     static void render();
 
   public:
+    static SDL_Renderer *renderer;
+
     static void init();
     static void start();
     static void stop();

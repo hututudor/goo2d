@@ -161,6 +161,32 @@ CMakeFiles/goo2d.dir/src/engine/ecs/Component.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/goo2d.dir/src/engine/ecs/Component.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tudor/projects/goo2d/src/engine/ecs/Component.cpp -o CMakeFiles/goo2d.dir/src/engine/ecs/Component.cpp.s
 
+CMakeFiles/goo2d.dir/src/engine/infrastructure/AssetManager.cpp.o: CMakeFiles/goo2d.dir/flags.make
+CMakeFiles/goo2d.dir/src/engine/infrastructure/AssetManager.cpp.o: ../src/engine/infrastructure/AssetManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tudor/projects/goo2d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/goo2d.dir/src/engine/infrastructure/AssetManager.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/goo2d.dir/src/engine/infrastructure/AssetManager.cpp.o -c /home/tudor/projects/goo2d/src/engine/infrastructure/AssetManager.cpp
+
+CMakeFiles/goo2d.dir/src/engine/infrastructure/AssetManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/goo2d.dir/src/engine/infrastructure/AssetManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tudor/projects/goo2d/src/engine/infrastructure/AssetManager.cpp > CMakeFiles/goo2d.dir/src/engine/infrastructure/AssetManager.cpp.i
+
+CMakeFiles/goo2d.dir/src/engine/infrastructure/AssetManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/goo2d.dir/src/engine/infrastructure/AssetManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tudor/projects/goo2d/src/engine/infrastructure/AssetManager.cpp -o CMakeFiles/goo2d.dir/src/engine/infrastructure/AssetManager.cpp.s
+
+CMakeFiles/goo2d.dir/src/engine/rendering/TextureRenderer.cpp.o: CMakeFiles/goo2d.dir/flags.make
+CMakeFiles/goo2d.dir/src/engine/rendering/TextureRenderer.cpp.o: ../src/engine/rendering/TextureRenderer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tudor/projects/goo2d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/goo2d.dir/src/engine/rendering/TextureRenderer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/goo2d.dir/src/engine/rendering/TextureRenderer.cpp.o -c /home/tudor/projects/goo2d/src/engine/rendering/TextureRenderer.cpp
+
+CMakeFiles/goo2d.dir/src/engine/rendering/TextureRenderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/goo2d.dir/src/engine/rendering/TextureRenderer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tudor/projects/goo2d/src/engine/rendering/TextureRenderer.cpp > CMakeFiles/goo2d.dir/src/engine/rendering/TextureRenderer.cpp.i
+
+CMakeFiles/goo2d.dir/src/engine/rendering/TextureRenderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/goo2d.dir/src/engine/rendering/TextureRenderer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tudor/projects/goo2d/src/engine/rendering/TextureRenderer.cpp -o CMakeFiles/goo2d.dir/src/engine/rendering/TextureRenderer.cpp.s
+
 # Object files for target goo2d
 goo2d_OBJECTS = \
 "CMakeFiles/goo2d.dir/src/test/main.cpp.o" \
@@ -170,7 +196,9 @@ goo2d_OBJECTS = \
 "CMakeFiles/goo2d.dir/src/engine/utils/Time.cpp.o" \
 "CMakeFiles/goo2d.dir/src/engine/ecs/Layer.cpp.o" \
 "CMakeFiles/goo2d.dir/src/engine/ecs/Entity.cpp.o" \
-"CMakeFiles/goo2d.dir/src/engine/ecs/Component.cpp.o"
+"CMakeFiles/goo2d.dir/src/engine/ecs/Component.cpp.o" \
+"CMakeFiles/goo2d.dir/src/engine/infrastructure/AssetManager.cpp.o" \
+"CMakeFiles/goo2d.dir/src/engine/rendering/TextureRenderer.cpp.o"
 
 # External object files for target goo2d
 goo2d_EXTERNAL_OBJECTS =
@@ -183,13 +211,15 @@ goo2d: CMakeFiles/goo2d.dir/src/engine/utils/Time.cpp.o
 goo2d: CMakeFiles/goo2d.dir/src/engine/ecs/Layer.cpp.o
 goo2d: CMakeFiles/goo2d.dir/src/engine/ecs/Entity.cpp.o
 goo2d: CMakeFiles/goo2d.dir/src/engine/ecs/Component.cpp.o
+goo2d: CMakeFiles/goo2d.dir/src/engine/infrastructure/AssetManager.cpp.o
+goo2d: CMakeFiles/goo2d.dir/src/engine/rendering/TextureRenderer.cpp.o
 goo2d: CMakeFiles/goo2d.dir/build.make
 goo2d: /usr/lib/libSDL2main.a
 goo2d: /usr/lib/libSDL2.so
 goo2d: /usr/lib/libSDL2_image.so
 goo2d: /usr/lib/libSDL2_ttf.so
 goo2d: CMakeFiles/goo2d.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tudor/projects/goo2d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable goo2d"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tudor/projects/goo2d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable goo2d"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/goo2d.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

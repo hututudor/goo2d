@@ -22,6 +22,11 @@ void goo::Game::init() {
   }
   gooSuccessLog.write("Success initializing SDL");
 
+  if (TTF_Init() != 0) {
+    gooErrorLog.write("Error initializing TTF");
+    return;
+  }
+
   window = SDL_CreateWindow("Goo", 0, 0, 10, 10, 0);
   if (!window) {
     gooErrorLog.write("Error creating SDL window");
@@ -40,6 +45,7 @@ void goo::Game::init() {
 void goo::Game::clean() {
   SDL_DestroyWindow(window);
   SDL_DestroyRenderer(renderer);
+  AssetManager::free();
   gooSuccessLog.write("Success cleaning the game");
 }
 

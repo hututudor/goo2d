@@ -10,9 +10,5 @@ namespace goo {
     glm::vec2 position;
     glm::vec2 size;
     float rotation;
-
-    void init() override {
-      std::cout << "init" << std::endl;
-    };
   };
 }

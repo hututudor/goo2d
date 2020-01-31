@@ -3,6 +3,7 @@
 #include "utils/Log.h"
 
 #include "infrastructure/Game.h"
+#include "infrastructure/AssetManager.h"
 
 #include "components/Transform.h"
 

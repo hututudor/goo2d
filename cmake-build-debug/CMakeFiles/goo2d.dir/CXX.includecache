@@ -1037,6 +1037,8 @@ utils/Log.h
 ../src/engine/utils/Log.h
 infrastructure/Game.h
 ../src/engine/infrastructure/Game.h
+infrastructure/AssetManager.h
+../src/engine/infrastructure/AssetManager.h
 components/Transform.h
 ../src/engine/components/Transform.h
 ecs/Level.h
@@ -1048,8 +1050,26 @@ ecs/Entity.h
 ecs/Component.h
 ../src/engine/ecs/Component.h
 
+../src/engine/infrastructure/AssetManager.h
+SDL2/SDL.h
+-
+SDL2/SDL_image.h
+-
+infrastructure/Game.h
+../src/engine/infrastructure/infrastructure/Game.h
+string
+../src/engine/infrastructure/string
+map
+../src/engine/infrastructure/map
+glm.hpp
+../src/engine/infrastructure/glm.hpp
+
 ../src/engine/infrastructure/Game.h
 SDL2/SDL.h
+-
+SDL2/SDL_ttf.h
+-
+SDL2/SDL_image.h
 -
 glm.hpp
 -
@@ -1059,6 +1079,8 @@ utils/Log.h
 ../src/engine/infrastructure/utils/Log.h
 utils/Time.h
 ../src/engine/infrastructure/utils/Time.h
+AssetManager.h
+../src/engine/infrastructure/AssetManager.h
 string
 ../src/engine/infrastructure/string
 map
@@ -1075,6 +1097,24 @@ LogColor.h
 ../src/engine/utils/LogColor.h
 
 ../src/engine/utils/Time.h
+
+/home/tudor/projects/goo2d/src/engine/ecs/Component.h
+
+/home/tudor/projects/goo2d/src/engine/ecs/Entity.cpp
+components/Transform.h
+-
+Entity.h
+/home/tudor/projects/goo2d/src/engine/ecs/Entity.h
+
+/home/tudor/projects/goo2d/src/engine/ecs/Entity.h
+Component.h
+/home/tudor/projects/goo2d/src/engine/ecs/Component.h
+utils/Log.h
+/home/tudor/projects/goo2d/src/engine/ecs/utils/Log.h
+string
+/home/tudor/projects/goo2d/src/engine/ecs/string
+vector
+/home/tudor/projects/goo2d/src/engine/ecs/vector
 
 /home/tudor/projects/goo2d/src/test/main.cpp
 goo.h

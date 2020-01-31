@@ -2,6 +2,7 @@
 
 goo::Entity::Entity(const std::string &name) {
   this->name = name;
+  transform = this->addComponent<goo::Transform>();
 }
 
 goo::Entity::~Entity() {

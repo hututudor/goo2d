@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Component.h"
+#include <components/Transform.h>
 #include "utils/Log.h"
 #include "string"
 #include "vector"
@@ -17,6 +18,7 @@ namespace goo {
   public:
     std::string name;
     Layer *layer;
+    Transform* transform;
 
     Entity(const std::string &name);
     ~Entity();

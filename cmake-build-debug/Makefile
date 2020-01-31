@@ -231,6 +231,33 @@ src/engine/ecs/Level.cpp.s:
 	$(MAKE) -f CMakeFiles/goo2d.dir/build.make CMakeFiles/goo2d.dir/src/engine/ecs/Level.cpp.s
 .PHONY : src/engine/ecs/Level.cpp.s
 
+src/engine/infrastructure/AssetManager.o: src/engine/infrastructure/AssetManager.cpp.o
+
+.PHONY : src/engine/infrastructure/AssetManager.o
+
+# target to build an object file
+src/engine/infrastructure/AssetManager.cpp.o:
+	$(MAKE) -f CMakeFiles/goo2d.dir/build.make CMakeFiles/goo2d.dir/src/engine/infrastructure/AssetManager.cpp.o
+.PHONY : src/engine/infrastructure/AssetManager.cpp.o
+
+src/engine/infrastructure/AssetManager.i: src/engine/infrastructure/AssetManager.cpp.i
+
+.PHONY : src/engine/infrastructure/AssetManager.i
+
+# target to preprocess a source file
+src/engine/infrastructure/AssetManager.cpp.i:
+	$(MAKE) -f CMakeFiles/goo2d.dir/build.make CMakeFiles/goo2d.dir/src/engine/infrastructure/AssetManager.cpp.i
+.PHONY : src/engine/infrastructure/AssetManager.cpp.i
+
+src/engine/infrastructure/AssetManager.s: src/engine/infrastructure/AssetManager.cpp.s
+
+.PHONY : src/engine/infrastructure/AssetManager.s
+
+# target to generate assembly for a file
+src/engine/infrastructure/AssetManager.cpp.s:
+	$(MAKE) -f CMakeFiles/goo2d.dir/build.make CMakeFiles/goo2d.dir/src/engine/infrastructure/AssetManager.cpp.s
+.PHONY : src/engine/infrastructure/AssetManager.cpp.s
+
 src/engine/infrastructure/Game.o: src/engine/infrastructure/Game.cpp.o
 
 .PHONY : src/engine/infrastructure/Game.o
@@ -257,6 +284,33 @@ src/engine/infrastructure/Game.s: src/engine/infrastructure/Game.cpp.s
 src/engine/infrastructure/Game.cpp.s:
 	$(MAKE) -f CMakeFiles/goo2d.dir/build.make CMakeFiles/goo2d.dir/src/engine/infrastructure/Game.cpp.s
 .PHONY : src/engine/infrastructure/Game.cpp.s
+
+src/engine/rendering/TextureRenderer.o: src/engine/rendering/TextureRenderer.cpp.o
+
+.PHONY : src/engine/rendering/TextureRenderer.o
+
+# target to build an object file
+src/engine/rendering/TextureRenderer.cpp.o:
+	$(MAKE) -f CMakeFiles/goo2d.dir/build.make CMakeFiles/goo2d.dir/src/engine/rendering/TextureRenderer.cpp.o
+.PHONY : src/engine/rendering/TextureRenderer.cpp.o
+
+src/engine/rendering/TextureRenderer.i: src/engine/rendering/TextureRenderer.cpp.i
+
+.PHONY : src/engine/rendering/TextureRenderer.i
+
+# target to preprocess a source file
+src/engine/rendering/TextureRenderer.cpp.i:
+	$(MAKE) -f CMakeFiles/goo2d.dir/build.make CMakeFiles/goo2d.dir/src/engine/rendering/TextureRenderer.cpp.i
+.PHONY : src/engine/rendering/TextureRenderer.cpp.i
+
+src/engine/rendering/TextureRenderer.s: src/engine/rendering/TextureRenderer.cpp.s
+
+.PHONY : src/engine/rendering/TextureRenderer.s
+
+# target to generate assembly for a file
+src/engine/rendering/TextureRenderer.cpp.s:
+	$(MAKE) -f CMakeFiles/goo2d.dir/build.make CMakeFiles/goo2d.dir/src/engine/rendering/TextureRenderer.cpp.s
+.PHONY : src/engine/rendering/TextureRenderer.cpp.s
 
 src/engine/utils/Log.o: src/engine/utils/Log.cpp.o
 
@@ -360,9 +414,15 @@ help:
 	@echo "... src/engine/ecs/Level.o"
 	@echo "... src/engine/ecs/Level.i"
 	@echo "... src/engine/ecs/Level.s"
+	@echo "... src/engine/infrastructure/AssetManager.o"
+	@echo "... src/engine/infrastructure/AssetManager.i"
+	@echo "... src/engine/infrastructure/AssetManager.s"
 	@echo "... src/engine/infrastructure/Game.o"
 	@echo "... src/engine/infrastructure/Game.i"
 	@echo "... src/engine/infrastructure/Game.s"
+	@echo "... src/engine/rendering/TextureRenderer.o"
+	@echo "... src/engine/rendering/TextureRenderer.i"
+	@echo "... src/engine/rendering/TextureRenderer.s"
 	@echo "... src/engine/utils/Log.o"
 	@echo "... src/engine/utils/Log.i"
 	@echo "... src/engine/utils/Log.s"

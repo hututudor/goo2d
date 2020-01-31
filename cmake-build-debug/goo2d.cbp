@@ -120,10 +120,22 @@
 		<Unit filename="/home/tudor/projects/goo2d/src/engine/goo.h">
 			<Option target="goo2d"/>
 		</Unit>
+		<Unit filename="/home/tudor/projects/goo2d/src/engine/infrastructure/AssetManager.cpp">
+			<Option target="goo2d"/>
+		</Unit>
+		<Unit filename="/home/tudor/projects/goo2d/src/engine/infrastructure/AssetManager.h">
+			<Option target="goo2d"/>
+		</Unit>
 		<Unit filename="/home/tudor/projects/goo2d/src/engine/infrastructure/Game.cpp">
 			<Option target="goo2d"/>
 		</Unit>
 		<Unit filename="/home/tudor/projects/goo2d/src/engine/infrastructure/Game.h">
+			<Option target="goo2d"/>
+		</Unit>
+		<Unit filename="/home/tudor/projects/goo2d/src/engine/rendering/TextureRenderer.cpp">
+			<Option target="goo2d"/>
+		</Unit>
+		<Unit filename="/home/tudor/projects/goo2d/src/engine/rendering/TextureRenderer.h">
 			<Option target="goo2d"/>
 		</Unit>
 		<Unit filename="/home/tudor/projects/goo2d/src/engine/utils/Log.cpp">
