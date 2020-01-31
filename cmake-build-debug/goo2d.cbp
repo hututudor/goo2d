@@ -90,6 +90,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/tudor/projects/goo2d/src/engine/components/SpriteRenderer.h">
+			<Option target="goo2d"/>
+		</Unit>
 		<Unit filename="/home/tudor/projects/goo2d/src/engine/components/Transform.h">
 			<Option target="goo2d"/>
 		</Unit>

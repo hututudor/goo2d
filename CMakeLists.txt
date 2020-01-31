@@ -23,7 +23,7 @@ add_executable(goo2d
         src/engine/ecs/Component.cpp
         src/engine/components/Transform.h
         src/engine/infrastructure/AssetManager.cpp
-        src/engine/infrastructure/AssetManager.h src/engine/rendering/TextureRenderer.cpp src/engine/rendering/TextureRenderer.h)
+        src/engine/infrastructure/AssetManager.h src/engine/rendering/TextureRenderer.cpp src/engine/rendering/TextureRenderer.h src/engine/components/SpriteRenderer.h)
 
 find_package(SDL2 REQUIRED)
 find_package(SDL2_image REQUIRED)

@@ -996,6 +996,18 @@ iostream
 cstdio
 -
 
+../src/engine/components/SpriteRenderer.h
+iostream
+-
+ecs/Component.h
+../src/engine/components/ecs/Component.h
+infrastructure/AssetManager.h
+../src/engine/components/infrastructure/AssetManager.h
+rendering/TextureRenderer.h
+../src/engine/components/rendering/TextureRenderer.h
+glm.hpp
+../src/engine/components/glm.hpp
+
 ../src/engine/components/Transform.h
 iostream
 -
@@ -1009,6 +1021,8 @@ glm.hpp
 ../src/engine/ecs/Entity.h
 Component.h
 ../src/engine/ecs/Component.h
+components/Transform.h
+-
 utils/Log.h
 ../src/engine/ecs/utils/Log.h
 string
@@ -1035,12 +1049,16 @@ vector
 ../src/engine/goo.h
 utils/Log.h
 ../src/engine/utils/Log.h
+utils/Time.h
+../src/engine/utils/Time.h
 infrastructure/Game.h
 ../src/engine/infrastructure/Game.h
 infrastructure/AssetManager.h
 ../src/engine/infrastructure/AssetManager.h
 components/Transform.h
 ../src/engine/components/Transform.h
+components/SpriteRenderer.h
+../src/engine/components/SpriteRenderer.h
 ecs/Level.h
 ../src/engine/ecs/Level.h
 ecs/Layer.h
@@ -1088,6 +1106,12 @@ map
 vector
 ../src/engine/infrastructure/vector
 
+../src/engine/rendering/TextureRenderer.h
+SDL2/SDL.h
+-
+infrastructure/Game.h
+../src/engine/rendering/infrastructure/Game.h
+
 ../src/engine/utils/Log.h
 termcolor.hpp
 -
@@ -1097,24 +1121,6 @@ LogColor.h
 ../src/engine/utils/LogColor.h
 
 ../src/engine/utils/Time.h
-
-/home/tudor/projects/goo2d/src/engine/ecs/Component.h
-
-/home/tudor/projects/goo2d/src/engine/ecs/Entity.cpp
-components/Transform.h
--
-Entity.h
-/home/tudor/projects/goo2d/src/engine/ecs/Entity.h
-
-/home/tudor/projects/goo2d/src/engine/ecs/Entity.h
-Component.h
-/home/tudor/projects/goo2d/src/engine/ecs/Component.h
-utils/Log.h
-/home/tudor/projects/goo2d/src/engine/ecs/utils/Log.h
-string
-/home/tudor/projects/goo2d/src/engine/ecs/string
-vector
-/home/tudor/projects/goo2d/src/engine/ecs/vector
 
 /home/tudor/projects/goo2d/src/test/main.cpp
 goo.h

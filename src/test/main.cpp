@@ -13,6 +13,10 @@ int main(int argv, char *args[]) {
   goo::Layer *layer1 = new goo::Layer("layer1");
   goo::Entity *entity1 = new goo::Entity("entity1");
 
+  entity1->transform->position = glm::vec2(100, 100);
+  entity1->transform->size = glm::vec2(80, 110);
+  entity1->addComponent<goo::SpriteRenderer>()->setTexture("player");
+
   layer1->addEntity(entity1);
   level1->addLayer(layer1);
 
