@@ -2,8 +2,12 @@
 
 #include <SDL2/SDL.h>
 #include <glm.hpp>
+#include "ecs/Level.h"
 #include "utils/Log.h"
+#include "utils/Time.h"
 #include "string"
+#include "map"
+#include "vector"
 
 namespace goo {
   class Game {
@@ -15,6 +19,10 @@ namespace goo {
     static SDL_Event event;
     static SDL_Renderer *renderer;
     static bool isRunning;
+    static std::vector<goo::Level *> levels;
+    static Level *currentLevel;
+    static int targetedFPS;
+    static int ticksLastFrame;
 
     static void processInput();
     static void update();
@@ -25,6 +33,13 @@ namespace goo {
     static void start();
     static void stop();
     static void clean();
+
+    static void addLevel(Level *level);
+    static void removeLevel(const std::string &name);
+    static Level *getLevel(const std::string &name);
+    static std::vector<goo::Level *> getLevels();
+    static Level *getCurrentLevel();
+    static void changeLevel(const std::string &name);
 
     static void setWindowPosition(glm::vec2 winPos);
     static void setWindowSize(glm::vec2 winSize);
@@ -38,6 +53,7 @@ namespace goo {
     static void setWindowResizable(bool winResizable);
     static void setWindowMinimumSize(glm::vec2 winMinSize);
     static void setWindowMaximumSize(glm::vec2 winMaxSize);
+    static void setTargetedFPS(int fps);
 
     static glm::vec2 getWindowPosition();
     static glm::vec2 getWindowSize();
@@ -47,5 +63,6 @@ namespace goo {
     static float getWindowOpacity();
     static glm::vec2 getWindowMinimumSize();
     static glm::vec2 getWindowMaximumSize();
+    static int getTargetedFPS();
   };
 }

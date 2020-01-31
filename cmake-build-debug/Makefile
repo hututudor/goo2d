@@ -123,6 +123,114 @@ goo2d/fast:
 	$(MAKE) -f CMakeFiles/goo2d.dir/build.make CMakeFiles/goo2d.dir/build
 .PHONY : goo2d/fast
 
+src/engine/ecs/Component.o: src/engine/ecs/Component.cpp.o
+
+.PHONY : src/engine/ecs/Component.o
+
+# target to build an object file
+src/engine/ecs/Component.cpp.o:
+	$(MAKE) -f CMakeFiles/goo2d.dir/build.make CMakeFiles/goo2d.dir/src/engine/ecs/Component.cpp.o
+.PHONY : src/engine/ecs/Component.cpp.o
+
+src/engine/ecs/Component.i: src/engine/ecs/Component.cpp.i
+
+.PHONY : src/engine/ecs/Component.i
+
+# target to preprocess a source file
+src/engine/ecs/Component.cpp.i:
+	$(MAKE) -f CMakeFiles/goo2d.dir/build.make CMakeFiles/goo2d.dir/src/engine/ecs/Component.cpp.i
+.PHONY : src/engine/ecs/Component.cpp.i
+
+src/engine/ecs/Component.s: src/engine/ecs/Component.cpp.s
+
+.PHONY : src/engine/ecs/Component.s
+
+# target to generate assembly for a file
+src/engine/ecs/Component.cpp.s:
+	$(MAKE) -f CMakeFiles/goo2d.dir/build.make CMakeFiles/goo2d.dir/src/engine/ecs/Component.cpp.s
+.PHONY : src/engine/ecs/Component.cpp.s
+
+src/engine/ecs/Entity.o: src/engine/ecs/Entity.cpp.o
+
+.PHONY : src/engine/ecs/Entity.o
+
+# target to build an object file
+src/engine/ecs/Entity.cpp.o:
+	$(MAKE) -f CMakeFiles/goo2d.dir/build.make CMakeFiles/goo2d.dir/src/engine/ecs/Entity.cpp.o
+.PHONY : src/engine/ecs/Entity.cpp.o
+
+src/engine/ecs/Entity.i: src/engine/ecs/Entity.cpp.i
+
+.PHONY : src/engine/ecs/Entity.i
+
+# target to preprocess a source file
+src/engine/ecs/Entity.cpp.i:
+	$(MAKE) -f CMakeFiles/goo2d.dir/build.make CMakeFiles/goo2d.dir/src/engine/ecs/Entity.cpp.i
+.PHONY : src/engine/ecs/Entity.cpp.i
+
+src/engine/ecs/Entity.s: src/engine/ecs/Entity.cpp.s
+
+.PHONY : src/engine/ecs/Entity.s
+
+# target to generate assembly for a file
+src/engine/ecs/Entity.cpp.s:
+	$(MAKE) -f CMakeFiles/goo2d.dir/build.make CMakeFiles/goo2d.dir/src/engine/ecs/Entity.cpp.s
+.PHONY : src/engine/ecs/Entity.cpp.s
+
+src/engine/ecs/Layer.o: src/engine/ecs/Layer.cpp.o
+
+.PHONY : src/engine/ecs/Layer.o
+
+# target to build an object file
+src/engine/ecs/Layer.cpp.o:
+	$(MAKE) -f CMakeFiles/goo2d.dir/build.make CMakeFiles/goo2d.dir/src/engine/ecs/Layer.cpp.o
+.PHONY : src/engine/ecs/Layer.cpp.o
+
+src/engine/ecs/Layer.i: src/engine/ecs/Layer.cpp.i
+
+.PHONY : src/engine/ecs/Layer.i
+
+# target to preprocess a source file
+src/engine/ecs/Layer.cpp.i:
+	$(MAKE) -f CMakeFiles/goo2d.dir/build.make CMakeFiles/goo2d.dir/src/engine/ecs/Layer.cpp.i
+.PHONY : src/engine/ecs/Layer.cpp.i
+
+src/engine/ecs/Layer.s: src/engine/ecs/Layer.cpp.s
+
+.PHONY : src/engine/ecs/Layer.s
+
+# target to generate assembly for a file
+src/engine/ecs/Layer.cpp.s:
+	$(MAKE) -f CMakeFiles/goo2d.dir/build.make CMakeFiles/goo2d.dir/src/engine/ecs/Layer.cpp.s
+.PHONY : src/engine/ecs/Layer.cpp.s
+
+src/engine/ecs/Level.o: src/engine/ecs/Level.cpp.o
+
+.PHONY : src/engine/ecs/Level.o
+
+# target to build an object file
+src/engine/ecs/Level.cpp.o:
+	$(MAKE) -f CMakeFiles/goo2d.dir/build.make CMakeFiles/goo2d.dir/src/engine/ecs/Level.cpp.o
+.PHONY : src/engine/ecs/Level.cpp.o
+
+src/engine/ecs/Level.i: src/engine/ecs/Level.cpp.i
+
+.PHONY : src/engine/ecs/Level.i
+
+# target to preprocess a source file
+src/engine/ecs/Level.cpp.i:
+	$(MAKE) -f CMakeFiles/goo2d.dir/build.make CMakeFiles/goo2d.dir/src/engine/ecs/Level.cpp.i
+.PHONY : src/engine/ecs/Level.cpp.i
+
+src/engine/ecs/Level.s: src/engine/ecs/Level.cpp.s
+
+.PHONY : src/engine/ecs/Level.s
+
+# target to generate assembly for a file
+src/engine/ecs/Level.cpp.s:
+	$(MAKE) -f CMakeFiles/goo2d.dir/build.make CMakeFiles/goo2d.dir/src/engine/ecs/Level.cpp.s
+.PHONY : src/engine/ecs/Level.cpp.s
+
 src/engine/infrastructure/Game.o: src/engine/infrastructure/Game.cpp.o
 
 .PHONY : src/engine/infrastructure/Game.o
@@ -177,6 +285,33 @@ src/engine/utils/Log.cpp.s:
 	$(MAKE) -f CMakeFiles/goo2d.dir/build.make CMakeFiles/goo2d.dir/src/engine/utils/Log.cpp.s
 .PHONY : src/engine/utils/Log.cpp.s
 
+src/engine/utils/Time.o: src/engine/utils/Time.cpp.o
+
+.PHONY : src/engine/utils/Time.o
+
+# target to build an object file
+src/engine/utils/Time.cpp.o:
+	$(MAKE) -f CMakeFiles/goo2d.dir/build.make CMakeFiles/goo2d.dir/src/engine/utils/Time.cpp.o
+.PHONY : src/engine/utils/Time.cpp.o
+
+src/engine/utils/Time.i: src/engine/utils/Time.cpp.i
+
+.PHONY : src/engine/utils/Time.i
+
+# target to preprocess a source file
+src/engine/utils/Time.cpp.i:
+	$(MAKE) -f CMakeFiles/goo2d.dir/build.make CMakeFiles/goo2d.dir/src/engine/utils/Time.cpp.i
+.PHONY : src/engine/utils/Time.cpp.i
+
+src/engine/utils/Time.s: src/engine/utils/Time.cpp.s
+
+.PHONY : src/engine/utils/Time.s
+
+# target to generate assembly for a file
+src/engine/utils/Time.cpp.s:
+	$(MAKE) -f CMakeFiles/goo2d.dir/build.make CMakeFiles/goo2d.dir/src/engine/utils/Time.cpp.s
+.PHONY : src/engine/utils/Time.cpp.s
+
 src/test/main.o: src/test/main.cpp.o
 
 .PHONY : src/test/main.o
@@ -213,12 +348,27 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... goo2d"
 	@echo "... edit_cache"
+	@echo "... src/engine/ecs/Component.o"
+	@echo "... src/engine/ecs/Component.i"
+	@echo "... src/engine/ecs/Component.s"
+	@echo "... src/engine/ecs/Entity.o"
+	@echo "... src/engine/ecs/Entity.i"
+	@echo "... src/engine/ecs/Entity.s"
+	@echo "... src/engine/ecs/Layer.o"
+	@echo "... src/engine/ecs/Layer.i"
+	@echo "... src/engine/ecs/Layer.s"
+	@echo "... src/engine/ecs/Level.o"
+	@echo "... src/engine/ecs/Level.i"
+	@echo "... src/engine/ecs/Level.s"
 	@echo "... src/engine/infrastructure/Game.o"
 	@echo "... src/engine/infrastructure/Game.i"
 	@echo "... src/engine/infrastructure/Game.s"
 	@echo "... src/engine/utils/Log.o"
 	@echo "... src/engine/utils/Log.i"
 	@echo "... src/engine/utils/Log.s"
+	@echo "... src/engine/utils/Time.o"
+	@echo "... src/engine/utils/Time.i"
+	@echo "... src/engine/utils/Time.s"
 	@echo "... src/test/main.o"
 	@echo "... src/test/main.i"
 	@echo "... src/test/main.s"

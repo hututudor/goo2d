@@ -74,12 +74,12 @@ preinstall:
 CMakeFiles/goo2d.dir/all:
 	$(MAKE) -f CMakeFiles/goo2d.dir/build.make CMakeFiles/goo2d.dir/depend
 	$(MAKE) -f CMakeFiles/goo2d.dir/build.make CMakeFiles/goo2d.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tudor/projects/goo2d/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target goo2d"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tudor/projects/goo2d/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target goo2d"
 .PHONY : CMakeFiles/goo2d.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/goo2d.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tudor/projects/goo2d/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tudor/projects/goo2d/cmake-build-debug/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/goo2d.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tudor/projects/goo2d/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/goo2d.dir/rule

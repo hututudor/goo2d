@@ -7,8 +7,15 @@ std::string goo::Game::title;
 SDL_Event goo::Game::event;
 SDL_Renderer *goo::Game::renderer;
 bool goo::Game::isRunning;
+std::vector<goo::Level *> goo::Game::levels;
+goo::Level *goo::Game::currentLevel;
+int goo::Game::ticksLastFrame;
+int goo::Game::targetedFPS;
 
 void goo::Game::init() {
+  ticksLastFrame = 0;
+  targetedFPS = 60;
+
   if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
     gooErrorLog.write("Error initializing SDL");
     return;
@@ -37,6 +44,7 @@ void goo::Game::clean() {
 }
 
 void goo::Game::start() {
+  currentLevel->init();
   gooInfoLog.write("Starting the render loop");
   isRunning = true;
   while (isRunning) {
@@ -66,12 +74,18 @@ void goo::Game::processInput() {
 }
 
 void goo::Game::update() {
+  while (!SDL_TICKS_PASSED(SDL_GetTicks(), ticksLastFrame + 1000 / targetedFPS));
+  Time::deltaTime = static_cast<float>((SDL_GetTicks() - ticksLastFrame)) / 1000.0f;
+  ticksLastFrame = SDL_GetTicks();
 
+  currentLevel->update();
 }
 
 void goo::Game::render() {
   SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
   SDL_RenderClear(renderer);
+
+  currentLevel->render();
 
   SDL_RenderPresent(renderer);
 }
@@ -124,6 +138,10 @@ void goo::Game::setWindowMaximumSize(glm::vec2 winMaxSize) {
   SDL_SetWindowMaximumSize(window, winMaxSize.x, winMaxSize.y);
 }
 
+void goo::Game::setTargetedFPS(int fps) {
+  targetedFPS = fps;
+}
+
 glm::vec2 goo::Game::getWindowPosition() {
   int x, y;
   SDL_GetWindowPosition(window, &x, &y);
@@ -165,3 +183,45 @@ glm::vec2 goo::Game::getWindowMaximumSize() {
   SDL_GetWindowMaximumSize(window, &x, &y);
   return glm::vec2(x, y);
 }
+
+int goo::Game::getTargetedFPS() {
+  return targetedFPS;
+}
+
+void goo::Game::addLevel(goo::Level *level) {
+  levels.push_back(level);
+}
+
+void goo::Game::removeLevel(const std::string &name) {
+  for (int i = 0; i < levels.size(); i++) {
+    if (levels[i]->name == name) {
+      levels.erase(levels.begin() + i);
+    }
+  }
+}
+
+goo::Level *goo::Game::getLevel(const std::string &name) {
+  for (auto &level: levels) {
+    if (level->name == name) {
+      return level;
+    }
+  }
+  return nullptr;
+}
+
+std::vector<goo::Level *> goo::Game::getLevels() {
+  return levels;
+}
+
+goo::Level *goo::Game::getCurrentLevel() {
+  return currentLevel;
+}
+
+void goo::Game::changeLevel(const std::string &name) {
+  for (auto &level: levels) {
+    if (level->name == name) {
+      currentLevel = level;
+    }
+  }
+}
+

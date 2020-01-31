@@ -90,6 +90,33 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/tudor/projects/goo2d/src/engine/components/Transform.h">
+			<Option target="goo2d"/>
+		</Unit>
+		<Unit filename="/home/tudor/projects/goo2d/src/engine/ecs/Component.cpp">
+			<Option target="goo2d"/>
+		</Unit>
+		<Unit filename="/home/tudor/projects/goo2d/src/engine/ecs/Component.h">
+			<Option target="goo2d"/>
+		</Unit>
+		<Unit filename="/home/tudor/projects/goo2d/src/engine/ecs/Entity.cpp">
+			<Option target="goo2d"/>
+		</Unit>
+		<Unit filename="/home/tudor/projects/goo2d/src/engine/ecs/Entity.h">
+			<Option target="goo2d"/>
+		</Unit>
+		<Unit filename="/home/tudor/projects/goo2d/src/engine/ecs/Layer.cpp">
+			<Option target="goo2d"/>
+		</Unit>
+		<Unit filename="/home/tudor/projects/goo2d/src/engine/ecs/Layer.h">
+			<Option target="goo2d"/>
+		</Unit>
+		<Unit filename="/home/tudor/projects/goo2d/src/engine/ecs/Level.cpp">
+			<Option target="goo2d"/>
+		</Unit>
+		<Unit filename="/home/tudor/projects/goo2d/src/engine/ecs/Level.h">
+			<Option target="goo2d"/>
+		</Unit>
 		<Unit filename="/home/tudor/projects/goo2d/src/engine/goo.h">
 			<Option target="goo2d"/>
 		</Unit>
@@ -103,6 +130,12 @@
 			<Option target="goo2d"/>
 		</Unit>
 		<Unit filename="/home/tudor/projects/goo2d/src/engine/utils/Log.h">
+			<Option target="goo2d"/>
+		</Unit>
+		<Unit filename="/home/tudor/projects/goo2d/src/engine/utils/Time.cpp">
+			<Option target="goo2d"/>
+		</Unit>
+		<Unit filename="/home/tudor/projects/goo2d/src/engine/utils/Time.h">
 			<Option target="goo2d"/>
 		</Unit>
 		<Unit filename="/home/tudor/projects/goo2d/src/test/main.cpp">

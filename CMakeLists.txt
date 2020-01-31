@@ -10,7 +10,7 @@ add_executable(goo2d
         src/engine/utils/Log.cpp
         src/engine/utils/Log.h
         src/engine/infrastructure/Game.cpp
-        src/engine/infrastructure/Game.h)
+        src/engine/infrastructure/Game.h src/engine/ecs/Level.cpp src/engine/ecs/Level.h src/engine/utils/Time.cpp src/engine/utils/Time.h src/engine/ecs/Layer.cpp src/engine/ecs/Layer.h src/engine/ecs/Entity.cpp src/engine/ecs/Entity.h src/engine/ecs/Component.h src/engine/ecs/Component.cpp src/engine/components/Transform.h)
 
 find_package(SDL2 REQUIRED)
 find_package(SDL2_image REQUIRED)
